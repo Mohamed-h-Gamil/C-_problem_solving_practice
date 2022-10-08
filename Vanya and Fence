@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+ 
+int main(){
+    int s,h,c = 0;
+    cin>> s >> h;
+ 
+    int f[s];
+ 
+    for (int i = 0; i < s; i++){
+        cin>> f[i]; 
+    }
+ 
+    for (int i = 0; i < s; i++)
+    {
+        if(f[i] > h){
+            c += 2;
+        }
+        else{
+            c += 1;
+        }
+    }
+    cout<< c;
+    return 0;
+}
